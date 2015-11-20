@@ -1,0 +1,292 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color:#F6F6F6
+}
+
+.btn-default {
+    .border-radius: 2px;
+}
+
+#signFields{ /* username, password inputs -- login, sign up buttons */
+    margin-left: 10px;
+}
+
+#username, #password{
+    border-radius: 2px;
+}
+
+#nameLogout{ /* display name and logout button */
+    width: 100%;
+}
+
+#loggedInUser{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+#logoutButton{
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-left: 7px;
+    font-size: 10px;
+    display: inline-block;
+}
+
+#logoutButton:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: #BBBBBB;
+}
+
+#loginButton, #signUpButton{
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    margin-left: 8px;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    border: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+#loginButton:hover, #signUpButton:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: #BBBBBB;
+}
+
+.errorMsg{
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+.notCurrentMonth{
+   color: #BABABA;
+}
+
+.highlighted{ /* highlight a cell in calendar */
+    background: #D5D5D4;
+}
+
+#monthHeader{ /* month name and forward/back buttons */
+    font-size: 14px;
+    font-weight: 600;
+    width: 16%;
+    display: inline-block;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
+#pastMonth, #futureMonth{
+    background: none;
+    background-color: #CCCCCC;
+    border: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+#pastMonth:hover, #futureMonth:hover{
+    background-color: #B7B7B7;
+}
+
+button.eventButtonText{ /* events in calendar */
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background:none;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #9BC4C2;
+    opacity: .8;
+}
+
+#categoryButtons{
+    margin-left: 4.8%;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.catButtonClass{ /* class for category buttons */
+    display: inline-block;
+    border: 1px solid;
+    margin-bottom: 3px;
+}
+
+tr, td {
+    border: 1px solid black;
+}
+
+#calendarTable{
+    border: 1px solid black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr.tableRow td{ /* put numbers in top left corner and set cell size */
+    height: 100px;
+    width: 300px;
+    vertical-align: top;
+}
+
+#dayNames td{ /* sunday, monday, ... cells */
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.events{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #E7E7E7;
+    border-radius: 4px;
+    width: 260px;
+    float: left;
+}
+
+.eventWrapper input{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 150px;
+    display: inline;
+    float: right;
+}
+
+.eventWrapper label{
+    width: 250px;
+    display: block;
+    font-weight: 600;
+}
+
+#submitEvent{
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    margin-left: 8px;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-left: 190px;
+    background-color: #FFFFFF;
+}
+
+#submitEvent:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: #E8FBFF;
+}
+
+.allInputsWrapper{
+    width: 55%;
+    margin: 0 auto;
+}
+
+#sharedCalendars{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #E7E7E7;
+    border-radius: 4px;
+    width: 260px;
+    float: right;
+    margin-bottom: 200px;
+}
+
+#shareText{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+#accessShared{
+    margin-left: 18px;
+}
+
+#accessShared label{
+    font-weight: 600;
+    margin-left: 58px;
+}
+
+#accessShared input{
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    margin-left: 8px;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    border: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+}
+
+#accessShared input:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    background-color: #E8FBFF;
+}
+
+#submitShare{
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    margin-left: 8px;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    border: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+}
+
+#submitShare:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    background-color: #E8FBFF;
+}

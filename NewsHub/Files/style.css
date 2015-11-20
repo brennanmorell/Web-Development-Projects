@@ -1,0 +1,13 @@
+.btn-default {
+    .border-radius:(2px);
+}
+
+body {
+    background-color: lightgrey;
+    margin:0;
+    padding:0;
+}
+
+.right{
+    right:5px;
+}

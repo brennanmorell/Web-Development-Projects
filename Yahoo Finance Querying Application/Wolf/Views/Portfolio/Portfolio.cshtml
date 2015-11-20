@@ -1,0 +1,35 @@
+﻿@model Wolf.Models.PortfolioModel
+
+@{
+    ViewBag.Title = "Portfolio";
+}
+
+@using (Html.BeginForm("Portfolio", "Portfolio"))
+{
+    <h2>Portfolio</h2>
+    <table>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>Enter two stocks for basic optimization.</tr>
+        <tr>&nbsp;</tr>
+        <tr><td>@Html.TextBoxFor(x => x.symbol1)</td></tr>
+        <tr><td>@Html.TextBoxFor(x => x.symbol2)</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td><input class="btn btn-default" name="submit" type="submit" value="Optimize"></td></tr>
+    </table>
+    <table>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+    </table>
+    
+   if(Model.optimizedPercentage1 != null && Model.optimizedPercentage2 != null)
+   {
+       string stock1 = @Model.optimizedPercentage1 + "%";
+       string stock2 = @Model.optimizedPercentage2 + "%";
+       
+        <table>
+            <tr><td>Stock 1:</td><td>@stock1</td></tr>
+            <tr><td>Stock 2:</td><td>@stock2</td></tr>
+        </table>
+   }
+}

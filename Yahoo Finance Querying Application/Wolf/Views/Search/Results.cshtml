@@ -1,0 +1,41 @@
+﻿@model Wolf.Models.QuoteListViewModel
+
+@for (int i = 0; i < Model.list.Count(); i++)
+{
+    <h2>@Model.list[i].name (@Model.list[i].exchange)</h2>
+}
+
+<table>
+    <tr>&nbsp;</tr>
+    <tr>&nbsp;</tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>Symbol</b></td>
+        <td width="50px">&nbsp;</td>
+        <td><b>Avg. Daily Volume</b></td>
+        <td width="50px">&nbsp;</td>
+        <td><b>Change</b></td>
+        <td width="50px">&nbsp;</td>
+        <td><b>Daily High</b></td>
+        <td width="50px">&nbsp;</td>
+        <td><b>Daily Low</b></td>
+
+
+        @for (var index = 0; index < Model.list.Count(); index++)
+        {
+        <tr>
+            <td align="center">@Model.list[index].symbol</td>
+            <td width="50px">&nbsp;</td>
+            <td align="center">@Model.list[index].averageDailyVolume</td>
+            <td width="50px">&nbsp;</td>
+            <td align="center">@Model.list[index].change</td>
+            <td width="50px">&nbsp;</td>
+            <td align="center">@Model.list[index].dailyHigh</td>
+            <td width="50px">&nbsp;</td>
+            <td align="center">@Model.list[index].dailyLow</td>
+
+        </tr>
+        }
+    </table>

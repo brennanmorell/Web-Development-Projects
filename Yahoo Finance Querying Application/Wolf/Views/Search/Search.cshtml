@@ -1,0 +1,17 @@
+﻿@model Wolf.Models.SearchModel
+@{
+    ViewBag.Title = "Search";
+}
+
+@using (Html.BeginForm("Search", "Search"))
+{
+    <h2>Search</h2>
+    <table>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>Search by stock symbol.</tr>
+        <tr>&nbsp;</tr>
+        <tr><td>@Html.TextBoxFor(x => x.symbolSearch)</td><td>&nbsp;</td><td><input class="btn btn-default" name="submit" type="submit" value="Search"></td></tr>
+    </table>
+}
+

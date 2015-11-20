@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Calendar</title>
+            <link rel="stylesheet" href="customStyle.css">
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+            <script src="calendarScript.js"></script>
+        </head>
+        <body>
+            
+            <div id="nameLogout">
+                <div id="loggedInUser"></div>
+                <input type="submit" id="logoutButton" name="logoutButton" value="Log out" />
+            </div>
+            
+            <div id="signFields">
+                <input id="username" type="text" placeholder="username" name="user"/>
+                <input id="password" type="password" placeholder="password" name="password" />
+                <input type="submit" id="loginButton" name="loginButton" value="Login" />
+                <input type="submit" id="signUpButton" name="signUpButton" value="Sign up" />
+            </div>
+
+            <div class="errorMsg"></div>
+            
+            <strong id="currentDate"></strong>
+            
+            <br>
+            
+            <div id="monthHeader">
+                <input type="submit" id="pastMonth" value="<" />
+                <strong id="monthDisplay"></strong>
+                <input type="submit" id="futureMonth" value=">" />
+            </div>
+            
+            <br><br>
+
+            <div id="categoryButtons"></div>
+            
+            <table id="calendarTable">
+                <tr id="dayNames"><td>Sunday</td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td></tr>
+                <tr class="tableRow"><td id="day1" class="dateTD"></td><td id="day2" class="dateTD"></td><td id="day3" class="dateTD"></td><td id="day4" class="dateTD"></td><td id="day5" class="dateTD"></td><td id="day6" class="dateTD"></td><td id="day7" class="dateTD"></td></tr>
+                <tr class="tableRow"><td id="day8" class="dateTD"></td><td id="day9" class="dateTD"></td><td id="day10" class="dateTD"></td><td id="day11" class="dateTD"></td><td id="day12" class="dateTD"></td><td id="day13" class="dateTD"></td><td id="day14" class="dateTD"></td></tr>
+                <tr class="tableRow"><td id="day15" class="dateTD"></td><td id="day16" class="dateTD"></td><td id="day17" class="dateTD"></td><td id="day18" class="dateTD"></td><td id="day19" class="dateTD"></td><td id="day20" class="dateTD"></td><td id="day21" class="dateTD"></td></tr>
+                <tr class="tableRow"><td id="day22" class="dateTD"></td><td id="day23" class="dateTD"></td><td id="day24" class="dateTD"></td><td id="day25" class="dateTD"></td><td id="day26" class="dateTD"></td><td id="day27" class="dateTD"></td><td id="day28" class="dateTD"></td></tr>
+                <tr class="tableRow"><td id="day29" class="dateTD"></td><td id="day30" class="dateTD"></td><td id="day31" class="dateTD"></td><td id="day32" class="dateTD"></td><td id="day33" class="dateTD"></td><td id="day34" class="dateTD"></td><td id="day35" class="dateTD"></td></tr>
+            </table>
+
+            <br>
+            
+            <div id="allDialogs" title="">
+                <p id="dialogEventDesc"></p>
+                <p id="dialogEventStart"></p>
+                <p id="dialogEventEnd"></p>
+                <p id="dialogEventCat"></p>
+                <p id="dialogEventEdit"></p>
+                <p id="dialogEventDelete"></p>
+            </div>
+            
+            <div id="editDialogs" title="Edit Event">
+                <input type="text" id="dialogEditDate" />
+                <input type="text" id="dialogEditDesc" />
+                <input type="text" id="dialogEditStart" />
+                <input type="text" id="dialogEditEnd" />
+                <input type="text" id="dialogEditCat" />
+                <div id="badEditFormat"></div>
+                <input type="submit" id="submitEdit" value="Confirm" />
+            </div>
+            
+            <div class="allInputsWrapper">
+                <div class="events">
+                    <div class="eventWrapper">
+                        <form>
+                            <label>Description <input type="text" id="eventText" name="eventInfo" placeholder="event" /></label><br>
+                            <label>Date <input type="text" placeholder="01/01/1999" id="datepicker" /></label><br>
+                            <label>Start <input type="text" id="startTime" placeholder="1:00PM" /></label><br>
+                            <label>End <input type="text" id="endTime" placeholder="2:00PM" /></label><br>
+                            <label>Category <input type="text" placeholder="Music" id="category" /></label><br>
+                            <label>Group <input type="text" placeholder="user1,user2" id="grouping" /></label><br>
+                        </form>
+                        <div id="badEventFormat"></div>
+                    </div>
+                    <br>
+                    <input type="submit" name="submitEvent" id="submitEvent" value="Create" />
+                    <br><br>
+                </div>
+                
+                <div id="sharedCalendars">
+                    <input type="text" placeholder="jarett" id="shareText" />
+                    <input type="submit" id="submitShare" value="Share" />
+                    <div id="accessShared">
+                        <label>Shared with you</label>
+                        <div id="badShareName"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+    </html>

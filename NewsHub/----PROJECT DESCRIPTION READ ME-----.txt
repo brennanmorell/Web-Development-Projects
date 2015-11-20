@@ -1,0 +1,3 @@
+This project is a basic News Sharing site developed using PHP, HTML, and MYSQL. The site allows users to share news and other posts with eachother using descriptions, links, and categories. Users can favorite, vote, and comment on other users' posts. Additionally, users can click on categories to view other stories that relate to the same topics. 
+
+The site can be viewed at: http://ec25288122223.uswest2.compute.amazonaws.com/newssite/mainPage.php 

@@ -1,0 +1,7 @@
+This project is a user lightweight chat room site developed using JavaScript (jQuery), Node.js, Socket.io, HTML, and CSS. This was my first time developing an application that used Socket.io and Node.js libraries. The site allows users to chat in a private lobby as well as create and administer their own password protected chat rooms. Administrative users can kick, mute, and permanently ban other users from their chat rooms.
+
+Some Cool Functionality:
+-Users can private message other users by sending "/pm <recipient> <message body>".
+-Users are notified when other users are typing 
+
+The site is hosted on my Amazon EC2 Instance, although I rarely run the chat server so the link would be of little use. 

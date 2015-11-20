@@ -1,0 +1,4 @@
+This project is a user calendar site inspired by Google Calendars developed using AJAX, PHP, HTML, CSS, and MYSQL. The site allows users to build calendars with by adding events that consists of a description, date, start time, end time, category. Calendar events can be shown and hidden by event category. Users can also share specific events with a group (other users) or, if they so choose, share an entire calendar.
+
+The site can be viewed at: 
+http://ec2-52-88-122-223.us-west-2.compute.amazonaws.com/Mod5/Calendar/Calendar.html

@@ -1,0 +1,41 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 25%;
+    margin-left: 0;
+}
+
+#listUsers{
+    float: right;
+}
+
+#headerThisRoom{
+    float: right;
+    margin-right: 250px;
+    font-weight: 600;
+}
+
+#thisRoom{
+    font-weight: 400;
+}
+
+#headerListRooms{
+    float: right;
+    margin-right: 200px;
+    font-weight: 600;
+}
+
+#listRooms{
+    font-weight: 400;
+}
+
+#headerListUsers{
+    float: right;
+    font-weight: 600;
+}
+
+#listUsers{
+    font-weight: 400;
+}
